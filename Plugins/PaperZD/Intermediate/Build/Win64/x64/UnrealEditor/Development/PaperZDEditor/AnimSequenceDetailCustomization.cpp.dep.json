@@ -1,0 +1,32 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\detailcustomizations\\animsequencedetailcustomization.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal projects\\ue_projectv\\intermediate\\build\\win64\\x64\\projectveditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\paperzdeditor\\definitions.paperzdeditor.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\detailcustomizations\\animsequencedetailcustomization.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\propertyeditor\\public\\idetailpropertyextensionhandler.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\propertyeditor\\public\\detailwidgetrow.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\propertyeditor\\public\\idetailpropertyrow.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\propertyeditor\\public\\detailcategorybuilder.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\propertyeditor\\public\\idetailcustomnodebuilder.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\propertyeditor\\public\\detailbuildertypes.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\propertyeditor\\public\\propertyeditorcopypaste.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\propertyeditor\\public\\idetailcustomization.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\paperzdanimsequence.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\notifies\\paperzdanimnotify_base.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimnotify_base.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimsequence.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\propertyeditor\\public\\detaillayoutbuilder.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\slate\\spaperzdanimdatasourcegrid.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\propertyeditor\\public\\ipropertyutilities.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\input\\snumericentrybox.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\input\\sspinbox.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\colors\\scolorblock.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

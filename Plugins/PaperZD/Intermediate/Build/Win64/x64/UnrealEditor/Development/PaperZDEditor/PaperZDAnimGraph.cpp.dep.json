@@ -1,0 +1,22 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\paperzdanimgraph.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal projects\\ue_projectv\\intermediate\\build\\win64\\x64\\projectveditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\paperzdeditor\\definitions.paperzdeditor.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\paperzdanimgraph.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdanimgraph.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\paperzdanimgraphschema_transitional.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\paperzdanimgraphschema.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdanimgraphschema.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdanimgraphschema_transitional.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\paperzdanimbp.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimbp.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdanimgraph.gen.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\animtimeline\\paperzdanimtimelinetrack_notifies.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal projects\\ue_projectv\\intermediate\\build\\win64\\x64\\projectveditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\paperzdeditor\\definitions.paperzdeditor.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\animtimeline\\paperzdanimtimelinetrack_notifies.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\animtimeline\\paperzdanimtimelinetrack.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\animtimeline\\paperzdanimmodel_animsequence.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\animtimeline\\paperzdanimmodel.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\util\\paperzdeditordelegates.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\sequencerwidgets\\public\\itimeslider.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\sequencercore\\public\\isequencerinputhandler.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\sequencerwidgets\\public\\viewrangeinterpolation.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\sequencerwidgets\\public\\animatedrange.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\animtimeline\\paperzdanimtimelinetrack_notifiespanel.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\util\\paperzdeditorcommands.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\paperzdanimsequence.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\notifies\\paperzdanimnotify_base.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimnotify_base.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimsequence.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

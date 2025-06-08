@@ -1,0 +1,38 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\private\\animsequences\\sources\\paperzdanimationsource_flipbook.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal projects\\ue_projectv\\intermediate\\build\\win64\\x64\\projectveditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\paperzd\\definitions.paperzd.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\sources\\paperzdanimationsource_flipbook.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\sources\\paperzdanimationsource.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\uobject\\noexporttypes.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\serialization\\testundeclaredscriptstructobjectreferences.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\math\\unitconversion.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\math\\unitconversion.inl",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\internationalization\\polyglottextdata.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimationsource.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimationsource_flipbook.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\players\\paperzdplaybackhandle_flipbook.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\players\\paperzdplaybackhandle.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdplaybackhandle.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdplaybackhandle_flipbook.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\paperzdanimsequence_flipbook.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\paperzdanimsequence.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\notifies\\paperzdanimnotify_base.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimnotify_base.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimsequence.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\paperflipbook.h",
+            "d:\\epic games\\ue_5.6\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\paperflipbook.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimsequence_flipbook.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\paperflipbookcomponent.h",
+            "d:\\epic games\\ue_5.6\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\paperflipbookcomponent.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimationsource_flipbook.gen.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\nodes\\slate\\spaperzdstategraphnode_jump.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal projects\\ue_projectv\\intermediate\\build\\win64\\x64\\projectveditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\paperzdeditor\\definitions.paperzdeditor.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\nodes\\slate\\spaperzdstategraphnode_jump.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\grapheditor\\public\\snodepanel.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\public\\diffresults.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\grapheditor\\public\\marqueeoperation.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\grapheditor\\uht\\snodepanel.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\grapheditor\\public\\sgraphnode.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\nodes\\paperzdstategraphnode_jump.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\nodes\\paperzdstategraphnode.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdstategraphnode.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdstategraphnode_jump.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\text\\sinlineeditabletextblock.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\grapheditor\\public\\sgraphpin.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\layout\\swrapbox.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

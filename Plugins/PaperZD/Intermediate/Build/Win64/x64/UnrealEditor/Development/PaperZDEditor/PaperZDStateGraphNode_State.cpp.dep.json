@@ -1,0 +1,39 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\nodes\\paperzdstategraphnode_state.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal projects\\ue_projectv\\intermediate\\build\\win64\\x64\\projectveditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\paperzdeditor\\definitions.paperzdeditor.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\nodes\\paperzdstategraphnode_state.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\nodes\\paperzdstategraphnode.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdstategraphnode.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdstategraphnode_state.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\nodes\\paperzdstategraphnode_transition.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\nodes\\paperzdstategraphnode_transbase.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdstategraphnode_transbase.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdstategraphnode_transition.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\nodes\\slate\\spaperzdstategraphnode_state.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\grapheditor\\public\\snodepanel.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\public\\diffresults.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\grapheditor\\public\\marqueeoperation.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\grapheditor\\uht\\snodepanel.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\grapheditor\\public\\sgraphnode.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\grapheditor\\public\\sgraphpin.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\layout\\swrapbox.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\paperzdanimgraph.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdanimgraph.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\graphs\\paperzdanimgraphschema.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdanimgraphschema.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\util\\paperzdeditorutils.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\unrealed\\public\\kismet2\\kismeteditorutilities.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\unrealed\\public\\kismet2\\blueprinteditorutils.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\classviewer\\public\\classviewermodule.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\unrealed\\public\\edgraphutilities.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdstategraphnode_state.gen.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\private\\notifies\\paperzdanimnotifycustom.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal projects\\ue_projectv\\intermediate\\build\\win64\\x64\\projectveditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\paperzd\\definitions.paperzd.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\notifies\\paperzdanimnotifycustom.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\notifies\\paperzdanimnotify.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\notifies\\paperzdanimnotify_base.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimnotify_base.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimnotify.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimnotifycustom.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\paperzdaniminstance.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\ipaperzdaniminstancemanager.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\ipaperzdaniminstancemanager.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\players\\paperzdanimationplaybackdata.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\paperzdanimsequence.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimsequence.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdaniminstance.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\paperzdanimbpgeneratedclass.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animnodes\\paperzdanimnode_base.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimnode_base.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animnodes\\paperzdanimstatemachine.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimstatemachine.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimbpgeneratedclass.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimnotifycustom.gen.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\animtimeline\\paperzdanimmodel.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal projects\\ue_projectv\\intermediate\\build\\win64\\x64\\projectveditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\paperzdeditor\\definitions.paperzdeditor.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\animtimeline\\paperzdanimmodel.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\util\\paperzdeditordelegates.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\sequencerwidgets\\public\\itimeslider.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\sequencercore\\public\\isequencerinputhandler.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\sequencerwidgets\\public\\viewrangeinterpolation.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\sequencerwidgets\\public\\animatedrange.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\animtimeline\\paperzdanimtimelinetrack.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\util\\paperzdeditorsettings.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdeditorsettings.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\paperzdanimationsourceviewportclient.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\unrealed\\public\\seditorviewport.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\sviewport.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\kismetwidgets\\public\\sscrubcontrolpanel.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\editorwidgets\\public\\itransportcontrol.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\unrealed\\public\\scurveeditor.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\unrealed\\public\\scolorgradienteditor.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\editor\\kismetwidgets\\public\\sscrubwidget.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\paperzdanimsequence.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\notifies\\paperzdanimnotify_base.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimnotify_base.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimsequence.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\sources\\paperzdanimationsource.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\uobject\\noexporttypes.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\serialization\\testundeclaredscriptstructobjectreferences.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\math\\unitconversion.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\math\\unitconversion.inl",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\internationalization\\polyglottextdata.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimationsource.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

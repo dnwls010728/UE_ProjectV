@@ -1,0 +1,43 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\slate\\spaperzdanimationsourcenotifies.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal projects\\ue_projectv\\intermediate\\build\\win64\\x64\\projectveditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\paperzdeditor\\definitions.paperzdeditor.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\slate\\spaperzdanimationsourcenotifies.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\slate\\spaperzdconfirmdialog.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\sources\\paperzdanimationsource.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\uobject\\noexporttypes.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\serialization\\testundeclaredscriptstructobjectreferences.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\math\\unitconversion.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\math\\unitconversion.inl",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\internationalization\\polyglottextdata.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimationsource.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\animsequences\\paperzdanimsequence.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\notifies\\paperzdanimnotify_base.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimnotify_base.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimsequence.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\notifies\\paperzdanimnotifycustom.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\notifies\\paperzdanimnotify.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimnotify.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimnotifycustom.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzd\\public\\paperzdanimbp.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\paperzdanimbp.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\framework\\notifications\\notificationmanager.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\misc\\coreasynctasknotificationimpl.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\misc\\asynctasknotification.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\notifications\\snotificationlist.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\input\\ssearchbox.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\assetregistry\\public\\assetregistry\\assetregistrymodule.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\assetregistry\\public\\assetregistry\\iassetregistry.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\misc\\assetregistryinterface.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\assetregistry\\uht\\iassetregistry.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\text\\sinlineeditabletextblock.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
