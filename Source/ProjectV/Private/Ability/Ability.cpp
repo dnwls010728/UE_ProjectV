@@ -7,10 +7,10 @@
 #include "Components/SphereComponent.h"
 
 // Sets default values
-AAbility::AAbility()
+AAbility::AAbility() : AttackDelay(1.f)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 
 	Sphere = CreateDefaultSubobject<USphereComponent>(TEXT("Sphere"));
 	Sphere->SetupAttachment(RootComponent);
@@ -24,13 +24,17 @@ AAbility::AAbility()
 void AAbility::BeginPlay()
 {
 	Super::BeginPlay();
+
+	GetWorld()->GetTimerManager().SetTimer(
+		AttackTimerHandle,
+		this, &AAbility::OnAttack,
+		AttackDelay,
+		true
+	);
 	
 }
 
-// Called every frame
-void AAbility::Tick(float DeltaTime)
+void AAbility::OnAttack()
 {
-	Super::Tick(DeltaTime);
-
 }
 

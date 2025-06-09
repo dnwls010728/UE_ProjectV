@@ -19,14 +19,20 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	virtual void OnAttack();
+
 	UPROPERTY(EditAnywhere)
 	TObjectPtr<class USphereComponent> Sphere;
 
 	UPROPERTY(EditAnywhere)
 	TObjectPtr<class UPaperFlipbookComponent> Sprite;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	UPROPERTY()
+	int32 Level;
+
+	UPROPERTY(EditAnywhere)
+	float AttackDelay;
+
+	FTimerHandle AttackTimerHandle;
 
 };

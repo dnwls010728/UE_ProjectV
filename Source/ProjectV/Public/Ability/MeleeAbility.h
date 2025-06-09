@@ -13,5 +13,8 @@ UCLASS()
 class PROJECTV_API AMeleeAbility : public AAbility
 {
 	GENERATED_BODY()
+
+protected:
+	virtual void OnAttack() override;
 	
 };
