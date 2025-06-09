@@ -13,5 +13,12 @@ UCLASS()
 class PROJECTV_API ANavigatorCharacter : public APVCharacterBase
 {
 	GENERATED_BODY()
+
+public:
+	ANavigatorCharacter();
+
+protected:
+	UPROPERTY(EditAnywhere)
+	TObjectPtr<class UAbilityComponent> AbilityComponent;
 	
 };

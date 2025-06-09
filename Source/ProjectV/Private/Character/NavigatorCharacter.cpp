@@ -3,3 +3,9 @@
 
 #include "Character/NavigatorCharacter.h"
 
+#include "Character/Components/AbilityComponent.h"
+
+ANavigatorCharacter::ANavigatorCharacter()
+{
+	AbilityComponent = CreateDefaultSubobject<UAbilityComponent>(TEXT("AbilityComponent"));
+}

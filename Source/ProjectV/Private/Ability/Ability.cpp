@@ -3,11 +3,20 @@
 
 #include "Ability/Ability.h"
 
+#include "PaperFlipbookComponent.h"
+#include "Components/SphereComponent.h"
+
 // Sets default values
 AAbility::AAbility()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	Sphere = CreateDefaultSubobject<USphereComponent>(TEXT("Sphere"));
+	Sphere->SetupAttachment(RootComponent);
+
+	Sprite = CreateDefaultSubobject<UPaperFlipbookComponent>(TEXT("Sprite"));
+	Sprite->SetupAttachment(Sphere);
 
 }
 
@@ -16,10 +25,6 @@ void AAbility::BeginPlay()
 {
 	Super::BeginPlay();
 	
-}
-
-void AAbility::OnAttack()
-{
 }
 
 // Called every frame
