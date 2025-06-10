@@ -3,8 +3,7 @@
 
 #include "Abilities/MeleeAbility.h"
 
-AMeleeAbility::AMeleeAbility() :
-	AttackDelay(1.f)
+AMeleeAbility::AMeleeAbility()
 {
 }
 

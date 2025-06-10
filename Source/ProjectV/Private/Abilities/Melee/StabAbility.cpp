@@ -4,7 +4,10 @@
 #include "Abilities/Melee/StabAbility.h"
 
 #include "FCTween.h"
+#include "PaperFlipbook.h"
 #include "PaperFlipbookComponent.h"
+#include "Character/EnemyCharacter.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 AStabAbility::AStabAbility()
 {
@@ -28,8 +31,30 @@ void AStabAbility::BeginPlay()
 void AStabAbility::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 	
+	FBoxSphereBounds Bounds = Sprite->GetFlipbook()->GetRenderBounds();
+	FVector Size = Bounds.GetBox().GetSize();
+
+	TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
+
+	TArray<AActor*> ActorsToIgnore;
+	ActorsToIgnore.Add(GetOwner());
+
+	TArray<AActor*> OutActors;
+
+	bool bHit = UKismetSystemLibrary::BoxOverlapActors(
+		GetWorld(),
+		Sprite->GetComponentLocation(),
+		Size * .5f,
+		ObjectTypes,
+		AEnemyCharacter::StaticClass(),
+		ActorsToIgnore,
+		OutActors
+	);
+
+	if (bHit)
+	{
+	}
 }
 
 void AStabAbility::OnAttack()
@@ -41,33 +66,37 @@ void AStabAbility::OnAttack()
 
 	FCTween::Play(0.f, 1.f, [&](float t)
 	{
-		FVector location = FMath::Lerp(FVector(0.f), FVector(100.f, 0.f, 0.f), FCTween::Ease(t, EFCEase::InOutQuad));
-		Root->SetRelativeLocation(location);
-	}, StabTime);
-
-	FCTween::Play(0.f, 1.f, [&](float t)
+		FBoxSphereBounds Bounds = Sprite->GetFlipbook()->GetRenderBounds();
+		FVector Size = Bounds.GetBox().GetSize();
+		
+		FVector location = FMath::Lerp(FVector::ZeroVector, FVector((Size.X * .5f) + 25.f, 0.f, 0.f), FCTween::Ease(t, EFCEase::InOutQuad));
+		Sprite->SetRelativeLocation(location);
+	}, StabTime)->SetOnComplete([&]()
 	{
-		FVector scale = FMath::Lerp(FVector(1.f), FVector(0.f), FCTween::Ease(t, EFCEase::InQuart));
-		Root->SetRelativeScale3D(scale);
-	}, StabTime);
-	
-	GetWorld()->GetTimerManager().SetTimer(
-		StabTimerHandle,
-		this, &AStabAbility::OnStabEnd,
-		StabTime
-	);
-	
-}
+		FCTween::Play(0.f, 1.f, [&](float t)
+		{
+			FBoxSphereBounds Bounds = Sprite->GetFlipbook()->GetRenderBounds();
+			FVector Size = Bounds.GetBox().GetSize();
+		
+			FVector location =  FVector(Sprite->GetRelativeScale3D().X / 1.f * Size.X * .5f + 25.f, 0.f, 0.f);
+			Sprite->SetRelativeLocation(location);
+		
+			FVector scale = FMath::Lerp(FVector::One(), FVector::ZeroVector, FCTween::Ease(t, EFCEase::InQuart));
+			Sprite->SetRelativeScale3D(scale);
+		}, .25f)->SetOnComplete([&]()
+		{
+			GetWorld()->GetTimerManager().SetTimer(
+				AttackTimerHandle,
+				this, &AStabAbility::OnAttack,
+				AttackDelay
+			);
 
-void AStabAbility::OnStabEnd()
-{
-	GetWorld()->GetTimerManager().SetTimer(
-		AttackTimerHandle,
-		this, &AStabAbility::OnAttack,
-		AttackDelay
-	);
+			Sprite->SetRelativeLocation(FVector::ZeroVector);
+			Sprite->SetRelativeScale3D(FVector(1.f));
 	
-	SetActorHiddenInGame(true);
-	SetActorTickEnabled(false);
+			SetActorHiddenInGame(true);
+			SetActorTickEnabled(false);
+		});
+	});
 	
 }
