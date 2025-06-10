@@ -7,6 +7,8 @@
 #include "AbilityComponent.generated.h"
 
 
+class AAbility;
+
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class PROJECTV_API UAbilityComponent : public UActorComponent
 {
@@ -20,9 +22,11 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	UPROPERTY(EditAnywhere)
+	TArray<TSubclassOf<AAbility>> AbilityClasses;
+
+	UPROPERTY()
+	TArray<TObjectPtr<AAbility>> Abilities;
 
 		
 };

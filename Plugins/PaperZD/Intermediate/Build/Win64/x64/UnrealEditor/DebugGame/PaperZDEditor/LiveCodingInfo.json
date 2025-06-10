@@ -4,6 +4,7 @@
 		"Module.PaperZDEditor.1.cpp.obj": [
 			"PaperZDEditor.init.gen.cpp.obj",
 			"PaperZDEditorSettings.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
 			"AssetTypeActions_PaperZDAnimBP.cpp.obj",
 			"AssetTypeActions_ZDAnimationSource.cpp.obj",
 			"AssetTypeActions_ZDAnimSeq.cpp.obj",
@@ -37,8 +38,7 @@
 			"SPaperZDAnimAssetBrowser.cpp.obj",
 			"SPaperZDAnimationSourceNotifies.cpp.obj",
 			"SPaperZDAnimationSourceViewport.cpp.obj",
-			"SPaperZDAnimDataSourceGrid.cpp.obj",
-			"PerModuleInline.gen.cpp.obj"
+			"SPaperZDAnimDataSourceGrid.cpp.obj"
 		],
 		"Module.PaperZDEditor.2.cpp.obj": [
 			"SPaperZDAnimEditorBase.cpp.obj",

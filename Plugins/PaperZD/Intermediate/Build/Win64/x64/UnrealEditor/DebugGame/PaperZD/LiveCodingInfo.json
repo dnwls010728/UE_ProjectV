@@ -4,6 +4,7 @@
 		"Module.PaperZD.cpp.obj": [
 			"PaperZD.init.gen.cpp.obj",
 			"PaperZDComponentReference.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
 			"PaperZDAnimNode_Base.cpp.obj",
 			"PaperZDAnimNode_CacheAnimation.cpp.obj",
 			"PaperZDAnimNode_LayerAnimations.cpp.obj",
@@ -48,8 +49,7 @@
 			"IPaperZDSequencerSource.cpp.obj",
 			"PaperZDMovieSceneAnimationSection.cpp.obj",
 			"PaperZDMovieSceneAnimationTemplate.cpp.obj",
-			"PaperZDMovieSceneAnimationTrack.cpp.obj",
-			"PerModuleInline.gen.cpp.obj"
+			"PaperZDMovieSceneAnimationTrack.cpp.obj"
 		]
 	}
 }
