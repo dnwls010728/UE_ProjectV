@@ -14,6 +14,7 @@
 			"FCTweenInstance.gen.cpp.obj",
 			"FCTweenSubsystem.gen.cpp.obj",
 			"FCTweenUObject.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
 			"FCTweenBlueprintLibrary.cpp.obj",
 			"FCTweenBPAction.cpp.obj",
 			"FCTweenBPActionFloat.cpp.obj",
@@ -30,8 +31,7 @@
 			"FCTweenInstanceVector2D.cpp.obj",
 			"FCTweenModule.cpp.obj",
 			"FCTweenSubsystem.cpp.obj",
-			"FCTweenUObject.cpp.obj",
-			"PerModuleInline.gen.cpp.obj"
+			"FCTweenUObject.cpp.obj"
 		]
 	}
 }

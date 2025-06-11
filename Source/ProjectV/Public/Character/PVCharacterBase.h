@@ -13,15 +13,5 @@ UCLASS()
 class PROJECTV_API APVCharacterBase : public APaperZDCharacter
 {
 	GENERATED_BODY()
-
-public:
-	APVCharacterBase();
-
-protected:
-	UPROPERTY(EditAnywhere)
-	TObjectPtr<class USpringArmComponent> CameraBoom;
-
-	UPROPERTY(EditAnywhere)
-	TObjectPtr<class UCameraComponent> FollowCamera;
 	
 };

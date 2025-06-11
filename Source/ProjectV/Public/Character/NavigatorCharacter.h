@@ -19,6 +19,12 @@ public:
 
 protected:
 	UPROPERTY(EditAnywhere)
+	TObjectPtr<class USpringArmComponent> CameraBoom;
+
+	UPROPERTY(EditAnywhere)
+	TObjectPtr<class UCameraComponent> FollowCamera;
+	
+	UPROPERTY(EditAnywhere)
 	TObjectPtr<class UAbilityComponent> AbilityComponent;
 	
 };

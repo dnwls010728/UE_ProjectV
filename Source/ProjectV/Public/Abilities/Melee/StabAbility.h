@@ -20,7 +20,6 @@ public:
 	virtual void BeginPlay() override;
 	
 protected:
-	virtual void Tick(float DeltaTime) override;
 	virtual void OnAttack() override;
 
 	UPROPERTY(EditAnywhere)
@@ -31,6 +30,9 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 	float StabTime;
+	
+	UPROPERTY()
+	TArray<AActor*> HitActors;
 
 	FTimerHandle StabTimerHandle;
 	
