@@ -13,5 +13,8 @@ UCLASS()
 class PROJECTV_API AEnemyCharacter : public APVCharacterBase
 {
 	GENERATED_BODY()
+
+public:
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 	
 };

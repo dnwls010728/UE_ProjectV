@@ -65,10 +65,8 @@ void AStabAbility::OnAttack()
 				AActor* HitActor = Overlap.GetActor();
 				if (HitActor && !HitActors.Contains(HitActor))
 				{
-					HitActors.Add(HitActor);
-					UKismetSystemLibrary::PrintString(this, FString::Printf(TEXT("Hit: %s"), *HitActor->GetName()), true, false, FLinearColor::Red, 2.f);
-				
 					UGameplayStatics::ApplyDamage(HitActor, 10.f, GetInstigatorController(), this, UDamageType::StaticClass());
+					HitActors.Add(HitActor);
 				}
 			}
 		}
