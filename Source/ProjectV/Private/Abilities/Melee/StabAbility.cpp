@@ -53,7 +53,7 @@ void AStabAbility::OnAttack()
 			OutOverlaps,
 			Sprite->GetComponentLocation() + GetActorForwardVector() * (Size.X * .5f),
 			Sprite->GetComponentQuat(),
-			FCollisionObjectQueryParams(ECC_WorldDynamic),
+			FCollisionObjectQueryParams(ECC_GameTraceChannel1),
 			FCollisionShape::MakeBox(FVector(Size.X * .5f, 5.f, Size.Z * .5f)),
 			CollisionParams
 		);
