@@ -25,6 +25,9 @@ protected:
 	TObjectPtr<class UCameraComponent> FollowCamera;
 	
 	UPROPERTY(EditAnywhere)
+	TObjectPtr<class UWidgetComponent> HealthBarWidget;
+	
+	UPROPERTY(EditAnywhere)
 	TObjectPtr<class UAbilityComponent> AbilityComponent;
 	
 };

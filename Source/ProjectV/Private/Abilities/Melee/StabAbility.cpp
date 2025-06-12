@@ -6,7 +6,7 @@
 #include "FCTween.h"
 #include "PaperFlipbook.h"
 #include "PaperFlipbookComponent.h"
-#include "Kismet/KismetSystemLibrary.h"
+#include "Engine/DamageEvents.h"
 #include "Engine/OverlapResult.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -65,7 +65,8 @@ void AStabAbility::OnAttack()
 				AActor* HitActor = Overlap.GetActor();
 				if (HitActor && !HitActors.Contains(HitActor))
 				{
-					UGameplayStatics::ApplyDamage(HitActor, 10.f, GetInstigatorController(), this, UDamageType::StaticClass());
+					FDamageEvent DamageEvent;
+					HitActor->TakeDamage(10.f, DamageEvent, GetInstigatorController(), this);
 					HitActors.Add(HitActor);
 				}
 			}
