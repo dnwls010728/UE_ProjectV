@@ -637,7 +637,8 @@
             "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\slate\\spaperzdanimationsourceviewport.cpp",
             "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\slate\\spaperzdanimdatasourcegrid.cpp",
             "d:\\epic games\\ue_5.6\\engine\\source\\editor\\unrealed\\classes\\settings\\editorstylesettings.h",
-            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\editorstylesettings.generated.h"
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\editorstylesettings.generated.h",
+            "d:\\unreal projects\\ue_projectv\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\slate\\spaperzdanimeditorbase.cpp"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

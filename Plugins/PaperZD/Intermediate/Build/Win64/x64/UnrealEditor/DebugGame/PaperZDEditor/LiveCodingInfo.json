@@ -38,10 +38,10 @@
 			"SPaperZDAnimAssetBrowser.cpp.obj",
 			"SPaperZDAnimationSourceNotifies.cpp.obj",
 			"SPaperZDAnimationSourceViewport.cpp.obj",
-			"SPaperZDAnimDataSourceGrid.cpp.obj"
+			"SPaperZDAnimDataSourceGrid.cpp.obj",
+			"SPaperZDAnimEditorBase.cpp.obj"
 		],
 		"Module.PaperZDEditor.2.cpp.obj": [
-			"SPaperZDAnimEditorBase.cpp.obj",
 			"SPaperZDAnimNotifyPanel.cpp.obj",
 			"SPaperZDAnimSequenceEditor.cpp.obj",
 			"SPaperZDComponentSelector.cpp.obj",
@@ -97,11 +97,11 @@
 			"PaperZDGraphFactory.cpp.obj",
 			"PaperZDNotifyGraph.cpp.obj",
 			"PaperZDNotifyGraphSchema.cpp.obj",
-			"PaperZDStateMachineConnectionDrawingPolicy.cpp.obj"
+			"PaperZDStateMachineConnectionDrawingPolicy.cpp.obj",
+			"PaperZDStateMachineGraph.cpp.obj",
+			"PaperZDStateMachineSchema.cpp.obj"
 		],
 		"Module.PaperZDEditor.3.cpp.obj": [
-			"PaperZDStateMachineGraph.cpp.obj",
-			"PaperZDStateMachineSchema.cpp.obj",
 			"PaperZDEditor.cpp.obj"
 		]
 	}
