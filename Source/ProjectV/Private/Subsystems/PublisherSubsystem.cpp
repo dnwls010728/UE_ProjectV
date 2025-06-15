@@ -13,10 +13,10 @@ void UPublisherSubsystem::Unsubscribe(EEventType type, FDelegateHandle Handle)
 	}
 }
 
-void UPublisherSubsystem::Publish(EEventType EventType)
+void UPublisherSubsystem::Publish(EEventType EventType, const FEventData& EventData)
 {
 	if (FOnPublisherDelegate* Delegate = Events.Find(EventType))
-		Delegate->Broadcast();
+		Delegate->Broadcast(EventData);
 }
 
 UPublisherSubsystem* UPublisherSubsystem::Get(const UObject* WorldContextObject)

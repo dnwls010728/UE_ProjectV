@@ -9,10 +9,18 @@
 UENUM(BlueprintType)
 enum EEventType : uint8
 {
-	None UMETA(DisplayName = "None")
+	None UMETA(DisplayName = "None"),
+	EnemyDeath UMETA(DisplayName = "Enemy Death")
 };
 
-DECLARE_MULTICAST_DELEGATE(FOnPublisherDelegate)
+USTRUCT(BlueprintType)
+struct FEventData
+{
+	GENERATED_BODY()
+	
+};
+
+DECLARE_MULTICAST_DELEGATE_OneParam(FOnPublisherDelegate, FEventData);
 
 /**
  * 
@@ -24,10 +32,10 @@ class PROJECTV_API UPublisherSubsystem : public UGameInstanceSubsystem
 
 public:
 	template <typename UserClass>
-	FDelegateHandle Subscribe(EEventType type, UserClass* Object, typename TMemFunPtrType<false, UserClass, void()>::Type Func);
+	FDelegateHandle Subscribe(EEventType type, UserClass* Object, typename TMemFunPtrType<false, UserClass, void(const FEventData&)>::Type Func);
 
 	void Unsubscribe(EEventType type, FDelegateHandle Handle);
-	void Publish(EEventType EventType);
+	void Publish(EEventType EventType, const FEventData& EventData);
 
 	static UPublisherSubsystem* Get(const UObject* WorldContextObject);
 
@@ -37,7 +45,7 @@ private:
 };
 
 template <typename UserClass>
-FDelegateHandle UPublisherSubsystem::Subscribe(EEventType type, UserClass* Object, typename TMemFunPtrType<false, UserClass, void()>::Type Func)
+FDelegateHandle UPublisherSubsystem::Subscribe(EEventType type, UserClass* Object, typename TMemFunPtrType<false, UserClass, void(const FEventData&)>::Type Func)
 {
 	return Events.FindOrAdd(type).AddUObject(Object, Func);
 }
