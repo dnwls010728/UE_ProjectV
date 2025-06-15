@@ -6,6 +6,7 @@
 #include "Blueprint/UserWidget.h"
 #include "PlayerHUDWidget.generated.h"
 
+class UProgressBar;
 class UTextBlock;
 /**
  * 
@@ -21,5 +22,11 @@ public:
 protected:
 	UPROPERTY(meta = (BindWidget))
 	TObjectPtr<UTextBlock> TimerText;
+
+	UPROPERTY(meta = (BindWidget))
+	TObjectPtr<UProgressBar> ExpBar;
+
+	UPROPERTY(meta = (BindWidget))
+	TObjectPtr<UTextBlock> LevelText;
 	
 };
