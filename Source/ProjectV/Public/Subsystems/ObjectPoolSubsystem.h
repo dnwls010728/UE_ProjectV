@@ -15,6 +15,12 @@ class PROJECTV_API UObjectPoolSubsystem : public UWorldSubsystem
 	GENERATED_BODY()
 
 public:
+	UObjectPoolSubsystem();
+	
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
+
+private:
+	UPROPERTY()
+	TObjectPtr<UDataTable> DataTable;
 	
 };
