@@ -6,6 +6,15 @@
 #include "Subsystems/WorldSubsystem.h"
 #include "ObjectPoolSubsystem.generated.h"
 
+USTRUCT(BlueprintType)
+struct FPool
+{
+	GENERATED_BODY()
+
+	UPROPERTY()
+	TArray<AActor*> Array;
+};
+
 /**
  * 
  */
@@ -17,10 +26,18 @@ class PROJECTV_API UObjectPoolSubsystem : public UWorldSubsystem
 public:
 	UObjectPoolSubsystem();
 	
-	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
+	virtual void OnWorldBeginPlay(UWorld& InWorld) override;
+
+	bool GetFromPool(TSubclassOf<AActor> Class, AActor*& OutActor);
+	bool ReturnToPool(AActor* Actor);
+
+	static UObjectPoolSubsystem* Get(UObject* WorldContextObject);
 
 private:
 	UPROPERTY()
 	TObjectPtr<UDataTable> DataTable;
+
+	UPROPERTY()
+	TMap<TSubclassOf<AActor>, FPool> PoolMap;
 	
 };

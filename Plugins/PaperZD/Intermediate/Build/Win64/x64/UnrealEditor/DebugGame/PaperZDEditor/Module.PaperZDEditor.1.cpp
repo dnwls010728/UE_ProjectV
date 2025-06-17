@@ -36,4 +36,3 @@
 #include "D:/Unreal Projects/UE_ProjectV/Plugins/PaperZD/Source/PaperZDEditor/Private/Editors/Slate/SPaperZDAnimationSourceNotifies.cpp"
 #include "D:/Unreal Projects/UE_ProjectV/Plugins/PaperZD/Source/PaperZDEditor/Private/Editors/Slate/SPaperZDAnimationSourceViewport.cpp"
 #include "D:/Unreal Projects/UE_ProjectV/Plugins/PaperZD/Source/PaperZDEditor/Private/Editors/Slate/SPaperZDAnimDataSourceGrid.cpp"
-#include "D:/Unreal Projects/UE_ProjectV/Plugins/PaperZD/Source/PaperZDEditor/Private/Editors/Slate/SPaperZDAnimEditorBase.cpp"

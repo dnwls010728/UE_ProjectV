@@ -4,10 +4,11 @@
 #include "Character/NavigatorCharacter.h"
 
 #include "Camera/CameraComponent.h"
+#include "Character/EnemyCharacter.h"
 #include "Character/Components/AbilityComponent.h"
-#include "Components/CapsuleComponent.h"
 #include "Components/WidgetComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Subsystems/ObjectPoolSubsystem.h"
 
 ANavigatorCharacter::ANavigatorCharacter()
 {
@@ -21,4 +22,10 @@ ANavigatorCharacter::ANavigatorCharacter()
 	HealthBarWidget->SetupAttachment(RootComponent);
 	
 	AbilityComponent = CreateDefaultSubobject<UAbilityComponent>(TEXT("AbilityComponent"));
+}
+
+void ANavigatorCharacter::Spawn()
+{
+	AActor* OutActor = nullptr;
+	UObjectPoolSubsystem::Get(GetWorld())->GetFromPool(EnemyClass, OutActor);
 }

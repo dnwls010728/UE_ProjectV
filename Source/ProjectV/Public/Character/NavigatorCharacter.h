@@ -18,6 +18,9 @@ public:
 	ANavigatorCharacter();
 
 protected:
+	UFUNCTION(BlueprintCallable)
+	void Spawn();
+	
 	UPROPERTY(EditAnywhere)
 	TObjectPtr<class USpringArmComponent> CameraBoom;
 
@@ -29,5 +32,8 @@ protected:
 	
 	UPROPERTY(EditAnywhere)
 	TObjectPtr<class UAbilityComponent> AbilityComponent;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class AEnemyCharacter> EnemyClass;
 	
 };
