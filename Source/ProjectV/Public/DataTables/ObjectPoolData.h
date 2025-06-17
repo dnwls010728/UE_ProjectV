@@ -14,4 +14,7 @@ struct PROJECTV_API FObjectPoolData : public FTableRowBase
 	UPROPERTY(EditAnywhere)
 	int32 PoolSize = 0;
 
+	UPROPERTY(EditAnywhere)
+	bool bCanExpand = false;
+
 };

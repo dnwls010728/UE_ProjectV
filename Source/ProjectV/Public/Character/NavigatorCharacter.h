@@ -34,6 +34,6 @@ protected:
 	TObjectPtr<class UAbilityComponent> AbilityComponent;
 
 	UPROPERTY(EditAnywhere)
-	TSubclassOf<class AEnemyCharacter> EnemyClass;
+	TSubclassOf<class AProjectile> ProjectileClass;
 	
 };

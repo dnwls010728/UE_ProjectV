@@ -13,6 +13,12 @@ struct FPool
 
 	UPROPERTY()
 	TArray<AActor*> Array;
+
+	UPROPERTY()
+	int32 PoolSize = 0;
+
+	UPROPERTY()
+	bool bCanExpand = false;
 };
 
 /**

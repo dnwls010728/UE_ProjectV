@@ -21,6 +21,10 @@ void UObjectPoolSubsystem::OnWorldBeginPlay(UWorld& InWorld)
 	DataTable->GetAllRows("", ObjectPools);
 	for (const auto& Pool : ObjectPools)
 	{
+		FPool& FoundPool = PoolMap.FindOrAdd(Pool->PoolClass);
+		FoundPool.PoolSize = Pool->PoolSize;
+		FoundPool.bCanExpand = Pool->bCanExpand;
+		
 		for (int32 i = 0; i < Pool->PoolSize; ++i)
 		{
 			if (!IsValid(Pool->PoolClass)) break;
@@ -34,17 +38,9 @@ void UObjectPoolSubsystem::OnWorldBeginPlay(UWorld& InWorld)
 			AActor* Actor = InWorld.SpawnActor(Pool->PoolClass, &SpawnLocation, &SpawnRotation, SpawnParams);
 			if (IsValid(Actor))
 			{
-				if (APawn* Pawn = Cast<APawn>(Actor))
-				{
-					Pawn->SpawnDefaultController();
-				}
-				
-				if (IPoolable* Poolable = Cast<IPoolable>(Actor))
-				{
-					Poolable->OnDeactivate();
-				}
-
-				PoolMap.FindOrAdd(Pool->PoolClass).Array.Push(Actor);
+				if (APawn* Pawn = Cast<APawn>(Actor)) Pawn->SpawnDefaultController();
+				if (IPoolable* Poolable = Cast<IPoolable>(Actor)) Poolable->OnDeactivate();
+				FoundPool.Array.Push(Actor);
 			}
 		}
 	}
@@ -53,11 +49,26 @@ void UObjectPoolSubsystem::OnWorldBeginPlay(UWorld& InWorld)
 bool UObjectPoolSubsystem::GetFromPool(TSubclassOf<AActor> Class, AActor*& OutActor)
 {
 	FPool* Pool = PoolMap.Find(Class);
-	if (!Pool || Pool->Array.IsEmpty()) return false;
+	if (!Pool) return false;
 
-	AActor* Actor = Pool->Array.Pop();
+	AActor* Actor = nullptr;
+	if (!Pool->Array.IsEmpty()) Actor = Pool->Array.Pop();
+	else if (Pool->bCanExpand)
+	{
+		FActorSpawnParameters SpawnParams;
+		SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+			
+		FVector SpawnLocation = FVector::ZeroVector;
+		FRotator SpawnRotation = FRotator::ZeroRotator;
+		
+		Actor = GetWorld()->SpawnActor(Class, &SpawnLocation, &SpawnRotation, SpawnParams);
+		if (IsValid(Actor))
+		{
+			if (APawn* Pawn = Cast<APawn>(Actor)) Pawn->SpawnDefaultController();
+		}
+	}
+	
 	if (!IsValid(Actor)) return false;
-
 	if (IPoolable* Poolable = Cast<IPoolable>(Actor))
 	{
 		Poolable->OnActivate();
@@ -77,6 +88,12 @@ bool UObjectPoolSubsystem::ReturnToPool(AActor* Actor)
 	if (IPoolable* Poolable = Cast<IPoolable>(Actor))
 	{
 		Poolable->OnDeactivate();
+	}
+
+	if (Pool->Array.Num() >= Pool->PoolSize)
+	{
+		Actor->Destroy();
+		return true;
 	}
 
 	Pool->Array.Push(Actor);
